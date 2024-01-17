@@ -19,3 +19,19 @@ class User
       return nil
     end
   end
+
+   def self.all
+    @@users
+  end
+
+  def self.find_by_username(username)
+    user = all.find do |user|
+      user.username == username
+    end
+    user
+  end
+end
+
+User.new("username", "password")
+user = User.find_by_username("username") 
+puts User.authenticate("username", "password")
