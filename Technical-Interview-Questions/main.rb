@@ -77,3 +77,18 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 average_value = average(numbers)
 puts "The average of the numbers is: #{average_value}"
+
+Exercise 7
+
+# Create a method called length_finder that takes an array of strings as an argument and returns an array of the lengths of each string in the original array. Use the length_finder method to find the lengths of the strings in the following array:
+
+# words = ["hello", "what", "is", "up", "dude"]
+
+def length_finder(strings)
+  strings.map { |string| string.length }
+end
+
+words = ["hello", "what", "is", "up", "dude"]
+
+lengths = length_finder(words)
+puts "The lengths of the strings are: #{lengths}"
