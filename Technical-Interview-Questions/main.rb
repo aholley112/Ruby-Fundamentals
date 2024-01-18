@@ -63,3 +63,17 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 total_sum = sum(numbers)
 puts "The sum of the numbers is: #{total_sum}"
+
+# Exercise 6
+# Create a method called average that takes an array of numbers as an argument and returns the average of the numbers. Use the average method to find the average of the numbers in the following array:
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def average(numbers)
+  sum = numbers.inject(0) { |total, number| total + number }
+  sum.to_f / numbers.length 
+end
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+average_value = average(numbers)
+puts "The average of the numbers is: #{average_value}"
