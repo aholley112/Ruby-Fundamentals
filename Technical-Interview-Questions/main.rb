@@ -1,5 +1,4 @@
 # Exercise 1. Use an array to store the following information about 3 people: their first name, last name, and age. Then, loop through your array and print out the following message for each person:
-
 # Hi first_name last_name! You are age years old today.
 
 people = [
@@ -13,15 +12,13 @@ people.each do |person|
 end
 
 # Exercise 2
-
 # Use a hash to store the following information about 3 people: their first name, last name, and age. Then, loop through your hash and print out the following message for each person:
-
 # Hi first_name last_name! You are age years old today.
 
 people = {
   person1: { first_name: 'Axtin', last_name: 'Burdock', age: 30 },
   person2: { first_name: 'John', last_name: 'Mack', age: 45 },
-  person3: { first_name: 'Brooklynn', last_name: '{Porter}', age: 22 }
+  person3: { first_name: 'Brooklynn', last_name: 'Porter', age: 22 }
 }
 
 people.each do |key, person|
@@ -37,7 +34,6 @@ sentence.each_char do |char
 end
 
 # Exercise 4
-
 # For every number between 1 and 100, print out "Fizz" if the number is divisible by 3, "Buzz" if the number is divisible by 5, and "FizzBuzz" if the number is divisible by both 3 and 5. Otherwise, print out the number.
 
 (1..100).each do |number|
@@ -79,9 +75,7 @@ average_value = average(numbers)
 puts "The average of the numbers is: #{average_value}"
 
 Exercise 7
-
 # Create a method called length_finder that takes an array of strings as an argument and returns an array of the lengths of each string in the original array. Use the length_finder method to find the lengths of the strings in the following array:
-
 # words = ["hello", "what", "is", "up", "dude"]
 
 def length_finder(strings)
