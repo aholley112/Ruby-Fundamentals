@@ -51,3 +51,15 @@ end
     puts number
   end
 end
+
+# Exercise 5
+# Create a method called sum that takes an array of numbers as an argument and returns the sum of the numbers. Use the sum method to find the sum of the numbers in the following array:
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def sum(numbers)
+  numbers.inject(0) { |total, number| total + number }
+end
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+total_sum = sum(numbers)
+puts "The sum of the numbers is: #{total_sum}"
