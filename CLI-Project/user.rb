@@ -30,6 +30,10 @@ class User
     end
     user
   end
+
+  def change_password(new_password)
+    @password = BCrypt::Password.create(new_password)
+end
 end
 
 User.new("username", "password")
