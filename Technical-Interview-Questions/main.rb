@@ -116,7 +116,12 @@ puts "The reversed string is: #{reversed_string}"
     # Exercise 10
 
   # Create a method called high that takes a hash of symbols and numbers as an argument and finds the key with the largest value. Use the high method to find the key with the largest value in the following hash:
-
+  
+  def high(scores_hash)
+    highest_pair = scores_hash.max_by { |key, value| value }
+    highest_pair[0]
+end
+  
   high_scores = {
     bronze: 10,
     silver: 20,
