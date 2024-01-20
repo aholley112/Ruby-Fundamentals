@@ -112,3 +112,16 @@ puts "The reversed string is: #{reversed_string}"
 
   longest_word_length = find_longest_word(words)
   puts "The length of the longest word is: #{longest_word_length}"
+
+    # Exercise 10
+
+  # Create a method called high that takes a hash of symbols and numbers as an argument and finds the key with the largest value. Use the high method to find the key with the largest value in the following hash:
+
+  high_scores = {
+    bronze: 10,
+    silver: 20,
+    gold: 30
+  }
+
+  highest_key = high(high_scores)
+  puts "The key with the highest value is: #{highest_key}"
