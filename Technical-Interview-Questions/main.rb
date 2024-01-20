@@ -152,3 +152,16 @@ end
   value = hash[:a][:b]
 
   puts "The value is: #{value}"
+
+  # Exercise 12
+  # Create a method called double that takes an array of numbers as an argument and returns a new array with each number doubled. Use the double method to double the numbers in the following array:
+
+  numbers = [1, 2, 3, 4, 5]
+
+  def double(numbers)
+    numbers.map { |number| number * 2 }
+  end
+
+  numbers = [1, 2, 3, 4, 5]
+  doubled_numbers = double(numbers)
+  puts "The doubled numbers are: #{doubled_numbers}"
