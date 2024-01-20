@@ -86,3 +86,14 @@ words = ["hello", "what", "is", "up", "dude"]
 
 lengths = length_finder(words)
 puts "The lengths of the strings are: #{lengths}"
+
+# Exercise 8
+# Create a method called reverse that takes a string as an argument and returns the reverse of that string. Use the reverse method to reverse the string "hello world".
+
+def reverse(string)
+  string.reverse
+end
+
+string_to_reverse = "hello world"
+reversed_string = reverse(string_to_reverse
+puts "The reversed string is: #{reversed_string}"
