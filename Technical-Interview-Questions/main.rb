@@ -95,11 +95,10 @@ def reverse(string)
 end
 
 string_to_reverse = "hello world"
-reversed_string = reverse(string_to_reverse
+reversed_string = reverse(string_to_reverse)
 puts "The reversed string is: #{reversed_string}"
 
 # Exercise 9
-  
 # Create a method called find_longest_word that takes an array of words and returns the length of the longest one. Use the find_longest_word method to find the length of the longest word in the following array:
 # words = ["hello", "what", "is", "up", "dude"]
 
@@ -113,9 +112,8 @@ puts "The reversed string is: #{reversed_string}"
   longest_word_length = find_longest_word(words)
   puts "The length of the longest word is: #{longest_word_length}"
 
-    # Exercise 10
-
-  # Create a method called high that takes a hash of symbols and numbers as an argument and finds the key with the largest value. Use the high method to find the key with the largest value in the following hash:
+# Exercise 10
+# Create a method called high that takes a hash of symbols and numbers as an argument and finds the key with the largest value. Use the high method to find the key with the largest value in the following hash:
   
   def high(scores_hash)
     highest_pair = scores_hash.max_by { |key, value| value }
@@ -131,9 +129,8 @@ end
   highest_key = high(high_scores)
   puts "The key with the highest value is: #{highest_key}"
 
-    # Exercise 11
-
-  # A hash is nested within another hash. Write code that will return the value 30.
+# Exercise 11
+# A hash is nested within another hash. Write code that will return the value 30.
 
   # hash = {
   #   :a => {
@@ -153,8 +150,8 @@ end
 
   puts "The value is: #{value}"
 
-  # Exercise 12
-  # Create a method called double that takes an array of numbers as an argument and returns a new array with each number doubled. Use the double method to double the numbers in the following array:
+# Exercise 12
+# Create a method called double that takes an array of numbers as an argument and returns a new array with each number doubled. Use the double method to double the numbers in the following array:
 
   numbers = [1, 2, 3, 4, 5]
 
@@ -165,3 +162,20 @@ end
   numbers = [1, 2, 3, 4, 5]
   doubled_numbers = double(numbers)
   puts "The doubled numbers are: #{doubled_numbers}"
+
+# Exercise 13
+# Create a method called multiply that takes two numbers as arguments and returns the product of the two numbers. Use the multiply method to find the product of the following numbers:
+
+  a = 5
+
+  b = 6
+
+  def multiply(num1, num2)
+    num1 * num2
+  end
+  
+  a = 5
+  b = 6
+
+  product = multiply(a, b)
+  puts "The product of #{a} and #{b} is: #{product}"
