@@ -195,3 +195,13 @@ numbers = [9, 3, 1, 8, 6, 15, 12]
 divisible_numbers = divisible_by_three(numbers)
 puts "Numbers divisible by three are: #{divisible_numbers}"
 
+def join_arrays(array1, array2)
+  array1 + array2
+end
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+
+combined_array = join_arrays(a, b)
+puts "The combined array is: #{combined_array}"
+
