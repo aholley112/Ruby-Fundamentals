@@ -181,9 +181,7 @@ end
   puts "The product of #{a} and #{b} is: #{product}"
 
 # Exercise 14
-
 # Create a method called divisible_by_three that takes an array of numbers and returns a new array containing only those numbers that are divisible by three. Use the divisible_by_three method to find the numbers that are divisible by three in the following array:
-
 # numbers = [9, 3, 1, 8, 6, 15, 12]
 
 def divisible_by_three(numbers)
@@ -195,6 +193,12 @@ numbers = [9, 3, 1, 8, 6, 15, 12]
 divisible_numbers = divisible_by_three(numbers)
 puts "Numbers divisible by three are: #{divisible_numbers}"
 
+# Exercise 15
+# Create a method called join_arrays that takes two arrays as arguments and returns one array with all of the items from the argument arrays. Use the join_arrays method on the following arrays:
+
+a = [1, 2, 3]
+
+b = [4, 5, 6]
 def join_arrays(array1, array2)
   array1 + array2
 end
